@@ -1,0 +1,232 @@
+header {
+  display: flex;
+  width: auto;
+  margin-bottom: 3rem;
+}
+
+.navegacao {
+  display: block;
+}
+
+.imagen_logo {
+  margin: 0px 25px;
+  margin-top: 1.8rem;
+}
+
+.itens {
+  display: flex;
+  margin-top: calc(1.8rem + 5px);
+}
+
+.item {
+  list-style: none;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  text-decoration: none;
+  color: hsl(0, 0%, 41%);
+  font-size: 16px;
+  position: relative;
+}
+
+.item:hover {
+  font-weight: bold;
+  cursor: pointer;
+  color: #000;
+}
+
+.item a {
+  text-decoration: none;
+  color: hsl(0, 0%, 41%);
+}
+
+.item a:hover {
+  color: #000;
+}
+
+.seta_baixo {
+  background-image: url(../images/icon-arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: 6rem 4px;
+}
+
+.seta_cima {
+  background-image: url(../images/icon-arrow-up.svg);
+  background-repeat: no-repeat;
+  background-position: 6rem 4px;
+}
+
+.login {
+  display: flex;
+  margin-left: 75%;
+  margin-top: 0rem;
+  flex-direction: row;
+}
+
+.botao {
+  color: hsl(0, 0%, 41%);
+  font-size: 16px;
+  margin: 0px 15px;
+  justify-self: flex-end;
+}
+
+.botao_login {
+  padding: 6px 10px;
+  border: none;
+}
+
+.botao_register {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px 1px;
+  border-color: hsl(0, 0%, 41%);
+}
+
+.botao_menu {
+  display: none;
+}
+
+.botao_close{
+  display: none;
+}
+
+/* lista dinamica*/
+
+.card {
+  position: absolute;
+  background: white;
+  box-shadow: 1px 1px 10px hsl(0, 0%, 41%);
+  padding: 10px 15px;
+  border-radius: 15px;
+}
+
+.card_feature {
+  margin: 35px 0px;
+  display: none;
+  transition: 0.5s;
+}
+
+.card_company {
+  margin-top: 35px;
+  margin-left: 10rem;
+  display: none;
+  transition: 0.5s;
+}
+
+.icon {
+  margin: 15px 0px;
+}
+
+.icon a {
+  text-decoration: none;
+  color: hsl(0, 0%, 41%);
+}
+
+.icon a:hover {
+  color: hsl(0, 0%, 8%);
+  font-weight: bold;
+}
+
+.list {
+  padding-left: 20px;
+  background-image: url(../images/icon-todo.svg);
+  background-repeat: no-repeat;
+}
+
+.calendar {
+  padding-left: 20px;
+  background-image: url(../images/icon-calendar.svg);
+  background-repeat: no-repeat;
+}
+
+.reminders {
+  padding-left: 20px;
+  background-image: url(../images/icon-reminders.svg);
+  background-repeat: no-repeat;
+}
+
+.planning {
+  padding-left: 20px;
+  background-image: url(../images/icon-planning.svg);
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 748px) {
+  header {
+    justify-content: space-between;
+    width: auto;
+    margin: 0px;
+  }
+
+  .botao_menu {
+    margin-top: 1.7rem;
+    margin-right: 1rem;
+    border: none;
+    position: relative;
+    display: block;
+  }
+
+  .botao_close {
+    margin-top: 1.7rem;
+    margin-right: 1rem;
+    position: relative;
+    border: none;
+    display: none;
+  }
+
+  .navegacao {
+    position: absolute;
+    margin-left: 35%;
+  }
+
+  .card_navegacao {
+    margin-top: 0px;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    height: 100%;
+    padding: 80px 50px 400px 0px;
+    background: white;
+  }
+
+  .itens {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    align-items: start;
+  }
+
+  .item {
+    margin-bottom: 20px;
+    margin-right: 2px;
+  }
+
+  .card {
+    position: relative;
+    box-shadow: none;
+    padding: 2px 50px;
+    border-radius: 0px;
+    transition: none;
+    margin: 2px;
+  }
+
+  .login {
+    position: relative;
+    align-items: center;
+    margin-top: 25px;
+    margin-left: 2%;
+    flex-direction: column;
+  }
+
+  .botao {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .blackout {
+    background-color: hsl(0, 0%, 70%);
+  }
+
+  .ocultar {
+    display: none;
+  }
+}

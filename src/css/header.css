@@ -76,7 +76,7 @@ header {
 }
 
 .login {
-  background-color: none;
+  background-color: white;
   display: flex;
   flex-direction: row;
   margin-left: 50%;
@@ -84,7 +84,7 @@ header {
 }
 
 .botao {
-  background-color: none;
+  background-color: white;
   color: hsl(0, 0%, 41%);
   font-size: 16px;
   justify-self: flex-end;
@@ -180,7 +180,7 @@ header {
   }
 
   .botao_menu {
-    background-color: none;
+    background-color: white;
     border: none;
     display: block;
     margin-top: 1.7rem;
@@ -189,7 +189,7 @@ header {
   }
   
   .botao_close {
-    background-color: none;
+    background-color: white;
     border: none;
     display: none;
     margin-top: 1.7rem;
